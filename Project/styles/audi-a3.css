@@ -1,0 +1,337 @@
+@font-face {
+    font-family: 'Colus';
+    src: url('../fonts/Colus-Regular.eot');
+    src: url('../fonts/Colus-Regular.woff2') format('woff2'),
+    url('../fonts/Colus-Regular.woff') format('woff'),
+    }
+
+* {
+    font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.page-margins {
+    width: 75%;
+    max-width: 98rem;
+    height: 100%;
+    position: relative;
+    margin: 0 auto;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100%;
+    width: 40%;
+    align-content: center;
+    align-items: center;
+    margin-left: auto;
+}
+
+.desktop-contact {
+    display: flex;
+    width: 100%;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.contact-info a {
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.contact {
+    width: 100%;
+    background-color: #f2ebec;
+    height: 2rem;
+}
+
+.mobile-contact {
+    display: none;
+}
+
+.menu {
+    background-color: #134826;
+    height: 5rem;
+}
+
+.pages {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    color: #F5FFFA;
+}
+
+.headings {
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+    font-size: 17px;
+}
+
+#logo {
+    margin-right: auto;
+    font-family: 'Colus';
+    font-weight: 700;
+    font-size: 45px;
+    color: #FFFFFF;
+}
+
+.fa-bars {
+    display: none;
+}
+
+.carousel-container {
+    width: 100%;
+    position: relative;
+    margin: 10px auto;
+}
+
+.container {
+    position: relative;
+}
+
+.mySlides {
+    display: none;
+}
+
+.cursor {
+    cursor: pointer;
+}  
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+  
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+  
+.prev:hover,
+.next:hover {
+    background-color: #134826a9;
+}
+  
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+  
+.caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+}
+  
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+  
+.column {
+    float: left;
+    width: 16.66%;
+}
+
+.demo {
+    opacity: 0.6;
+}
+  
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+.characteristics {
+    margin-top: 30px;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 23px;
+    color: #134826;
+}
+
+.char-grid {
+    display:grid;
+    width: 50%;
+    margin: 0px auto;
+    grid-template-columns: 30% 30% 30%;
+    justify-content: center;
+    align-content: center;
+}
+
+.char-grid > p {
+    margin: 10px auto;
+    color: #134826;
+    font-weight: 700;
+}
+
+.char-grid > .icon {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.desc-text > p {
+    margin: 8px;
+    color: #134826;
+    font-size: 14px;
+}
+
+.description {
+    margin-bottom: 30px;
+}
+
+.bottom-menu {
+    background-color: #000;
+    height: 8rem;
+}
+
+.logo-bottom {
+    margin-right: 65px;
+    font-family: 'Colus';
+    font-weight: 700;
+    font-size: 65px;
+    color: #FFFFFF;
+}
+
+.bottom-pages {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    color: #F5FFFA;
+}
+
+.bottom-headings {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 12px;
+}
+
+@media only screen and (max-width: 600px) {
+    .page-margins {
+        width: 100%;
+    }
+
+    .contact {
+        position: fixed;
+        bottom: 0;
+        width: 100vw;
+        z-index: 5000;
+        height: 40px;
+        background-color: #d4cecf;
+    }
+
+    .contact-info {
+        width: 100%;
+    }
+
+    .desktop-contact {
+        display: none;
+    }
+
+    .mobile-contact {
+        display: flex;
+        margin: auto auto;
+        width: 100vw;
+    }
+
+    .mobile-contact > p {
+        margin: auto auto;
+    }
+
+    .pages {
+        flex-wrap: wrap;
+    }
+
+    #logo {
+        font-size: 35px;
+        margin-left: 10px;
+        width: 75%;
+    }
+
+    .headings {
+        width: 100%;
+        display: none;
+        flex-direction: column;
+    }
+
+    .headings > a {
+        margin: 3px 0px;
+        font-size: 17px;
+    }
+
+    .fa-bars {
+        display: inline-block;
+        width: 10%;
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    .title {
+        margin-left: 10px;
+    }
+
+    .char-grid {
+        width: 100%;
+    }
+
+    .desc-text {
+        margin-left: 10px;
+    }
+
+    .bottom-menu {
+        height: 16rem;
+    }
+
+    .bottom-pages {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 10px;
+    }
+
+    .logo-bottom {
+        font-size: 50px;
+    }
+
+    .bottom-headings {
+        height: 100%;
+        justify-content: flex-start;
+        font-size: 15px;
+        margin: 10px 0px;
+    }
+
+    .bottom-headings > a {
+        margin: 2px 0px;
+    }
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Login</title>
+    <link rel="stylesheet" href="../styles/login.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+      <main>
+        <div id="title-image"></div>
+          <section id="credentials">
+            <h1>Login</h1>
+            <p id="subtitle">Find the car of your dreams!</p>
+            <form action="index.html" method="POST">
+                <label for="user">Username*</label>
+                <p id="user-error">Please enter a valid username</p>
+                <input type="text" id="user" name="user" placeholder="Valid username (min. 6 characters)" required>
+                <label for="pass">Password*</label>
+                <p id="pass-error">Please enter a valid password</p>
+                <input type="password" id="pass" name="pass" placeholder="Min. 8 characters" required>
+                <div id="remember-me">
+                <input type="checkbox" name="check">
+                <label for="check" id="remember">Remember me</label>
+                </div>
+                <a href="" id="forgot">Forgot password?</a>
+                <button id='btn'>LOGIN</button>
+                <p>Not registered yet? <a href="signup.html">Create an account</a></p>
+            </form>
+          </section>
+      </main>
+      <script type="text/javascript" src="../scripts/login.js"></script>
+  </body>
+</html>

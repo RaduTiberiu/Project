@@ -1,0 +1,372 @@
+@font-face {
+    font-family: 'Colus';
+    src: url('../fonts/Colus-Regular.eot');
+    src: url('../fonts/Colus-Regular.woff2') format('woff2'),
+    url('../fonts/Colus-Regular.woff') format('woff'),
+    }
+
+* {
+    font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.page-margins {
+    width: 75%;
+    max-width: 98rem;
+    height: 100%;
+    position: relative;
+    margin: 0 auto;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100%;
+    width: 40%;
+    align-content: center;
+    align-items: center;
+    margin-left: auto;
+}
+
+.desktop-contact {
+    display: flex;
+    width: 100%;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.contact-info a {
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.contact {
+    width: 100%;
+    background-color: #f2ebec;
+    height: 2rem;
+}
+
+.mobile-contact {
+    display: none;
+}
+
+.menu {
+    background-color: #134826;
+    height: 5rem;
+}
+
+.pages {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    color: #F5FFFA;
+}
+
+.headings {
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+    font-size: 17px;
+}
+
+#logo {
+    margin-right: auto;
+    font-family: 'Colus';
+    font-weight: 700;
+    font-size: 45px;
+    color: #FFFFFF;
+}
+
+.fa-bars {
+    display: none;
+}
+
+.carousel-container {
+    width: 100%;
+    height: 370px;
+    position: relative;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+    width:100%;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: #134826a9;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #134826;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+.carousel-background {
+    width: 100%;
+    height: 318px;
+    background-color: #134826;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+.prod-lineup {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.controls {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 50px;
+    align-content: center;
+}
+
+.filters {
+    margin-bottom: 20px;
+}
+
+select {
+    margin-left: 10px;
+    border: 1px solid #bebebe;
+    border-radius: 5px;
+    color: #979797;
+}
+
+label {
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.prod-card {
+    margin-bottom: 20px;
+    height: 439px;
+    background-color: #f2ebec;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: linear 150ms;
+}
+
+.prod-card:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.49);
+}
+
+.title {
+    font-weight: 700;
+    font-size: 17px;
+}
+
+.prod-card > p {
+    margin: 10px 10px;
+}
+
+.price {
+    color: #ff533d;
+    font-weight: 700;
+    font-size: 17px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.prod:visited {
+    color: #000;
+}
+
+.bottom-menu {
+    background-color: #000;
+    height: 8rem;
+}
+
+.logo-bottom {
+    margin-right: 65px;
+    font-family: 'Colus';
+    font-weight: 700;
+    font-size: 65px;
+    color: #FFFFFF;
+}
+
+.bottom-pages {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    color: #F5FFFA;
+}
+
+.bottom-headings {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 12px;
+}
+
+@media only screen and (max-width: 600px) {
+    .page-margins {
+        width: 100%;
+    }
+
+    .contact {
+        position: fixed;
+        bottom: 1px;
+        width: 100vw;
+        z-index: 5000;
+        height: 40px;
+        background-color: #d4cecf;
+    }
+
+    .contact-info {
+        width: 100%;
+    }
+
+    .desktop-contact {
+        display: none;
+    }
+
+    .mobile-contact {
+        display: flex;
+        margin: auto auto;
+        width: 100vw;
+    }
+
+    .mobile-contact > p {
+        margin: auto auto;
+    }
+
+    .pages {
+        flex-wrap: wrap;
+    }
+
+    #logo {
+        font-size: 35px;
+        margin-left: 10px;
+        width: 75%;
+    }
+
+    .headings {
+        width: 100%;
+        display: none;
+        flex-direction: column;
+    }
+
+    .headings > a {
+        margin: 3px 0px;
+        font-size: 17px;
+    }
+
+    .fa-bars {
+        display: inline-block;
+        width: 10%;
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    .carousel-container {
+        height: 131px;
+    }
+
+    .carousel-background {
+        height: 129px;
+    }
+
+    .mySlides {
+        height: 100%;
+    }
+
+    .filters {
+        margin-top: 30px;
+        margin-left: 10px;
+    }
+
+    .prod-lineup {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    img {
+        object-fit: cover;
+    }
+
+    .prod-card {
+        height: 420px;
+    }
+
+    .bottom-menu {
+        height: 16rem;
+    }
+
+    .bottom-pages {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 10px;
+    }
+
+    .logo-bottom {
+        font-size: 50px;
+    }
+
+    .bottom-headings {
+        height: 100%;
+        justify-content: flex-start;
+        font-size: 15px;
+        margin: 10px 0px;
+    }
+
+    .bottom-headings > a {
+        margin: 2px 0px;
+    }
+}
